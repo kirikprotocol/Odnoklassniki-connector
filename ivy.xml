@@ -1,0 +1,47 @@
+<ivy-module version="2.0">
+  <info organisation="mobi.eyeline.mobilizer" module="sads-odnoklassniki"/>
+  <dependencies>
+
+    <dependency org="xml-apis" name="xml-apis" rev="2.0.2"/> <!--TODO: remove this before commit, no need, some bug in IDEA Ivy Plugin-->
+
+    <dependency org="commons-collections" name="commons-collections" rev="3.2.1"/>
+
+    <dependency org="mobi.eyeline.mobilizer" name="sads-utils" rev="[0.31,)" changing="true" transitive="true"/>
+    <dependency org="mobi.eyeline.mobilizer" name="sads-core" rev="[0.37,)" changing="true"/>
+    <dependency org="mobi.eyeline.mobilizer" name="sads-impl" rev="[0.161,)" changing="true"/>
+    <dependency org="mobi.eyeline.mobilizer" name="sads-profile-storage" rev="[0.6,)" changing="true"/>
+
+    <!-- For ManagedSessionContext. -->
+    <dependency org="mobi.eyeline.utils" name="db-template" rev="0.03" changing="true" conf="*->default"/>
+    <dependency org="org.hibernate" name="hibernate-core" rev="5.1.0.Final" conf="*->default"/>
+
+    <dependency org="commons-configuration" name="commons-configuration" rev="1.4"/>
+    <dependency org="commons-lang" name="commons-lang" rev="2.3"/>
+    <dependency org="org.apache.commons" name="commons-lang3" rev="3.4"/>
+    <dependency org="commons-io" name="commons-io" rev="1.4"/>
+    <dependency org="commons-logging" name="commons-logging" rev="1.1.1"/>
+    <dependency org="commons-httpclient" name="commons-httpclient" rev="3.1"/>
+    <dependency org="commons-codec" name="commons-codec" rev="1.2"/>
+    <dependency org="log4j" name="log4j" rev="1.2.16"/>
+    <dependency org="mobi.eyeline.util" name="utils" rev="1.0.62"/>
+    <dependency org="mobi.eyeline.mobilizer" name="personalization-helpers" rev="0.09"/>
+    <!-- dependency org="org.glassfish" name="javax.json" rev="1.0.4"/ -->
+    <dependency org="com.google.guava"   name="guava"         rev="[16.0.1,)" />
+    <dependency org="dom4j" name="dom4j" rev="1.6.1"/>
+    <dependency org="jaxen" name="jaxen" rev="1.1.6"/>
+    <dependency org="junit" name="junit" rev="4.10"/>
+    <dependency org="javax.servlet" name="servlet-api" rev="2.5"/>
+    <dependency org="mobi.eyeline.smpp" name="smppapi" rev="5.1.2"/>
+    <dependency org="mobi.eyeline.mobilizer" name="personalization-helpers" rev="0.09"/>
+
+    <dependency org="com.fasterxml.jackson.core" name="jackson-core" rev="2.7.2" transitive="false"/>
+    <dependency org="com.fasterxml.jackson.core" name="jackson-annotations" rev="2.7.2" transitive="false"/>
+    <dependency org="com.fasterxml.jackson.core" name="jackson-databind" rev="2.7.2" transitive="false"/>
+
+    <dependency org="org.igniterealtime.smack" name="smack-core" rev="4.1.0"/>
+    <dependency org="org.igniterealtime.smack" name="smack-im" rev="4.1.0"/>
+    <dependency org="org.igniterealtime.smack" name="smack-java7" rev="4.1.0"/>
+    <dependency org="org.igniterealtime.smack" name="smack-tcp" rev="4.1.0"/>
+    <dependency org="org.igniterealtime.smack" name="smack-extensions" rev="4.1.0"/>
+  </dependencies>
+</ivy-module>
