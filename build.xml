@@ -43,8 +43,6 @@
 		<javac destdir="${build-dir}/out"
 			   optimize="off"
 			   debug="on"
-			   source="1.7"
-			   target="1.7"
 			   encoding="UTF-8"
 			   nowarn="true"
 			   includeantruntime="false">
